@@ -15,9 +15,9 @@ I had some trouble installing caffe on Ubuntu 15.10 (mostly because I tried to u
 
 - Install cuda by [downloading it from Nvidia](https://developer.nvidia.com/cuda-downloads) and following the installation instructions. I downloaded the local deb, version 15.04.
 
-- Follow the instructions [here](https://github.com/BVLC/caffe/issues/2347). It fixes some issues with different paths between Ubuntu versions.
+- Follow the instructions [here](https://github.com/BVLC/caffe/issues/2347). It fixes some issues with different paths/names between files of Ubuntu versions.
 
-- Create symbolic links between the files as seen [here in the third post](https://github.com/NVIDIA/DIGITS/issues/156). This fixes some naming/path issues:
+- Create symbolic links between the files as seen [here in the third post](https://github.com/NVIDIA/DIGITS/issues/156). You might have to change the version from 8.0.2 to your version. The file is in the same folder and has the same name except for the version number. This fixes some naming/path issues:
         
         $ cd /usr/lib/x86_64-linux-gnu
         $ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
