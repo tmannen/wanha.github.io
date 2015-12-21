@@ -18,8 +18,7 @@ I had some trouble installing caffe on Ubuntu 15.10 (mostly because I tried to u
 - Follow the instructions [here](https://github.com/BVLC/caffe/issues/2347). It fixes some issues with different paths between Ubuntu versions.
 
 - Create symbolic links between the files as seen [here in the third post](https://github.com/NVIDIA/DIGITS/issues/156). This fixes some naming/path issues:
-
-
+        
         $ cd /usr/lib/x86_64-linux-gnu
         $ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
         $ sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
