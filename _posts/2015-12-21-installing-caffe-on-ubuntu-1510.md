@@ -19,9 +19,10 @@ I had some trouble installing caffe on Ubuntu 15.10 (mostly because I tried to u
 
 - Create symbolic links between the files as seen [here in the third post](https://github.com/NVIDIA/DIGITS/issues/156). This fixes some naming/path issues:
 
-    $ cd /usr/lib/x86_64-linux-gnu
-    $ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
-    $ sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
+
+        $ cd /usr/lib/x86_64-linux-gnu
+        $ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
+        $ sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
 
 - Change a line in the cuda host_config.h (located in /usr/local/cuda-7.5/targets/x86_64-linux/include/host_config.h. Taking a backup first is a good idea) file:
         
